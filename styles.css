@@ -1,0 +1,449 @@
+/* Bonjorno Plugin Styles */
+
+/* Main container */
+.bonjorno-container {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.bonjorno-content {
+  padding: 20px 0;
+  max-width: var(--file-line-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Date sections */
+.bonjorno-date-section {
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 20px;
+  transition: all 0.2s ease;
+}
+
+.bonjorno-date-section:last-child {
+  border-bottom: none;
+}
+
+.bonjorno-date-section.is-focused {
+  background-color: transparent;
+}
+
+/* Date headers */
+.bonjorno-date-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.bonjorno-date-header h2 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--text-normal);
+}
+
+.bonjorno-today-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-radius: 12px;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Content/Editor area */
+.bonjorno-date-content {
+  margin-top: 4px;
+}
+
+/* Embedded editor container */
+.bonjorno-embedded-editor {
+  width: 100%;
+  min-height: 50px;
+  background-color: transparent;
+  border: none !important;
+  border-left: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.bonjorno-embedded-editor::before,
+.bonjorno-embedded-editor::after {
+  display: none !important;
+  content: none !important;
+  border: none !important;
+  background: none !important;
+}
+
+.bonjorno-embedded-editor .markdown-source-view,
+.bonjorno-embedded-editor .markdown-preview-view {
+  padding: 0;
+}
+
+/* Hide and disable the inline title area */
+.bonjorno-embedded-editor .inline-title {
+  display: none !important;
+  height: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
+
+.bonjorno-embedded-editor .view-header-title-container,
+.bonjorno-embedded-editor .view-header-title {
+  display: none !important;
+}
+
+.bonjorno-embedded-editor .cm-editor {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.bonjorno-embedded-editor .cm-scroller {
+  padding: 0;
+}
+
+/* Hide the left gutter/line indicator */
+.bonjorno-embedded-editor .cm-gutters {
+  display: none !important;
+  width: 0 !important;
+}
+
+.bonjorno-embedded-editor .cm-lineNumbers {
+  display: none !important;
+}
+
+.bonjorno-embedded-editor .cm-foldGutter {
+  display: none !important;
+}
+
+/* Hide active line indicator */
+.bonjorno-embedded-editor .cm-activeLineGutter {
+  background-color: transparent !important;
+}
+
+/* Remove any left border */
+.bonjorno-embedded-editor .cm-content {
+  border-left: none !important;
+}
+
+.bonjorno-embedded-editor .cm-editor .cm-gutters {
+  display: none !important;
+}
+
+.bonjorno-embedded-editor .cm-editor .cm-scroller {
+  padding-left: 0 !important;
+}
+
+/* Universal selector to remove ALL left borders, padding, and visual indicators */
+.bonjorno-embedded-editor *,
+.bonjorno-embedded-editor *::before,
+.bonjorno-embedded-editor *::after {
+  border-left: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  outline-offset: 0 !important;
+}
+
+/* Remove any background colors that might appear as a line */
+.bonjorno-embedded-editor * {
+  background-image: none !important;
+}
+
+/* Target Obsidian's embed container which creates the blue line */
+.bonjorno-embedded-editor .markdown-embed,
+.bonjorno-embedded-editor .internal-embed,
+.bonjorno-embedded-editor .markdown-source-view,
+.bonjorno-embedded-editor .markdown-preview-view {
+  border-left: none !important;
+  border: none !important;
+  padding-left: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Force remove the embed indicator border */
+.bonjorno-embedded-editor .markdown-embed-content {
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove ALL pseudo-elements that might create the line */
+.bonjorno-embedded-editor *::before,
+.bonjorno-embedded-editor *::after {
+  display: none !important;
+  content: none !important;
+  border: none !important;
+  background: none !important;
+}
+
+/* Target the embed itself */
+.bonjorno-embedded-editor > .markdown-embed-content {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+
+/* Keep the expand icon visible for navigation */
+.bonjorno-embedded-editor .markdown-embed-link {
+  display: block !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Error and placeholder messages */
+.bonjorno-placeholder {
+  color: var(--text-muted);
+  opacity: 0.6;
+  font-style: italic;
+  padding: 12px 0;
+}
+
+.bonjorno-error {
+  color: var(--text-error);
+  padding: 16px;
+  background-color: var(--background-secondary);
+  border: 1px solid var(--text-error);
+  border-radius: 6px;
+  margin: 12px 0;
+}
+
+.bonjorno-error p {
+  margin: 8px 0;
+}
+
+.bonjorno-error-details {
+  font-family: var(--font-monospace);
+  font-size: 0.9em;
+  color: var(--text-muted);
+  word-break: break-word;
+}
+
+.bonjorno-error button {
+  margin-top: 12px;
+  padding: 6px 12px;
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bonjorno-error button:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+/* Dark mode specific adjustments */
+.theme-dark .bonjorno-editor {
+  background-color: transparent;
+}
+
+.theme-dark .bonjorno-date-section.is-focused {
+  background-color: transparent;
+}
+
+/* Light mode specific adjustments */
+.theme-light .bonjorno-editor {
+  background-color: transparent;
+}
+
+.theme-light .bonjorno-date-section.is-focused {
+  background-color: transparent;
+}
+
+/* Loading indicator */
+.bonjorno-loading {
+  text-align: center;
+  padding: 30px;
+  color: var(--text-muted);
+  font-style: italic;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Empty state */
+.bonjorno-empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+}
+
+.bonjorno-empty-state h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: var(--text-normal);
+}
+
+.bonjorno-empty-state p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Save indicator */
+.bonjorno-save-indicator {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 600;
+  animation: fadeInOut 2s ease-in-out;
+  pointer-events: none;
+}
+
+.bonjorno-save-indicator.success {
+  background-color: var(--interactive-success);
+  color: var(--text-on-accent);
+}
+
+.bonjorno-save-indicator.error {
+  background-color: var(--interactive-error);
+  color: var(--text-on-accent);
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* Settings page styles */
+.bonjorno-info,
+.bonjorno-tips {
+  padding: 12px 16px;
+  background-color: var(--background-secondary);
+  border-radius: 6px;
+  margin-bottom: 16px;
+  border-left: 3px solid var(--interactive-accent);
+}
+
+.bonjorno-info p,
+.bonjorno-tips li {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: var(--text-normal);
+}
+
+.bonjorno-tips {
+  list-style-position: inside;
+}
+
+.bonjorno-tips li {
+  margin: 10px 0;
+  padding-left: 8px;
+}
+
+.bonjorno-tips li::marker {
+  color: var(--interactive-accent);
+}
+
+/* Scrollbar styling */
+.bonjorno-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.bonjorno-container::-webkit-scrollbar-track {
+  background: var(--background-secondary);
+}
+
+.bonjorno-container::-webkit-scrollbar-thumb {
+  background: var(--background-modifier-border);
+  border-radius: 5px;
+}
+
+.bonjorno-container::-webkit-scrollbar-thumb:hover {
+  background: var(--background-modifier-border-hover);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bonjorno-content {
+    padding: 15px;
+  }
+
+  .bonjorno-date-header h2 {
+    font-size: 1.3em;
+  }
+
+  .bonjorno-date-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+}
+
+/* Dark mode specific adjustments */
+.theme-dark .bonjorno-editor-textarea,
+.theme-dark .bonjorno-editor {
+  background-color: transparent;
+}
+
+.theme-dark .bonjorno-date-section.is-focused {
+  background-color: transparent;
+}
+
+/* Light mode specific adjustments */
+.theme-light .bonjorno-editor-textarea,
+.theme-light .bonjorno-editor {
+  background-color: transparent;
+}
+
+.theme-light .bonjorno-date-section.is-focused {
+  background-color: transparent;
+}
+
+/* Relative positioning for save indicator */
+.bonjorno-date-section {
+  position: relative;
+}
+
+/* Print styles */
+@media print {
+  .bonjorno-date-header {
+    break-after: avoid;
+  }
+
+  .bonjorno-date-section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .bonjorno-loading,
+  .bonjorno-save-indicator {
+    display: none;
+  }
+}

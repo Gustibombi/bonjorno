@@ -1,0 +1,11 @@
+{
+  "id": "bonjorno",
+  "name": "Bonjorno",
+  "version": "0.1.0",
+  "minAppVersion": "0.15.0",
+  "description": "Logseq-style daily notes view with chronological scrolling. View and edit your daily notes in a single, continuous timeline from newest to oldest.",
+  "author": "Bonjorno Team",
+  "authorUrl": "https://github.com/yourusername/bonjorno",
+  "fundingUrl": "",
+  "isDesktopOnly": false
+}
