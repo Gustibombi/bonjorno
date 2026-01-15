@@ -31,7 +31,7 @@ A Logseq-style daily notes plugin for Obsidian that displays all your daily note
 
 ### Manual Installation
 
-1. Download the latest release from the [Releases page](https://github.com/yourusername/bonjorno/releases)
+1. Download the latest release from the [Releases page](https://github.com/krak7602/bonjorno/releases)
 2. Extract the files into your vault's `.obsidian/plugins/bonjorno/` directory
 3. Reload Obsidian
 4. Enable "Bonjorno" in Settings → Community Plugins
@@ -40,7 +40,7 @@ A Logseq-style daily notes plugin for Obsidian that displays all your daily note
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/bonjorno.git
+git clone https://github.com/krak7602/bonjorno.git
 
 # Navigate to your vault's plugins directory
 cd /path/to/your/vault/.obsidian/plugins/
@@ -312,7 +312,7 @@ If you find this plugin helpful:
 
 ## 📧 Contact
 
-- GitHub Issues: [Report a bug or request a feature](https://github.com/yourusername/bonjorno/issues)
+- GitHub Issues: [Report a bug or request a feature](https://github.com/krak7602/bonjorno/issues)
 - Obsidian Forum: [Discussion thread](https://forum.obsidian.md/)
 
 ---
