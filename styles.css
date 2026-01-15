@@ -144,21 +144,12 @@
   padding-left: 0 !important;
 }
 
-/* Universal selector to remove ALL left borders, padding, and visual indicators */
-.bonjorno-embedded-editor *,
-.bonjorno-embedded-editor *::before,
-.bonjorno-embedded-editor *::after {
+/* Remove left borders but preserve padding/margin for list indentation */
+.bonjorno-embedded-editor > *,
+.bonjorno-embedded-editor > .markdown-embed,
+.bonjorno-embedded-editor > .internal-embed {
   border-left: none !important;
-  padding-left: 0 !important;
-  margin-left: 0 !important;
   box-shadow: none !important;
-  outline: none !important;
-  outline-offset: 0 !important;
-}
-
-/* Remove any background colors that might appear as a line */
-.bonjorno-embedded-editor * {
-  background-image: none !important;
 }
 
 /* Target Obsidian's embed container which creates the blue line */
@@ -180,9 +171,11 @@
   padding: 0 !important;
 }
 
-/* Remove ALL pseudo-elements that might create the line */
-.bonjorno-embedded-editor *::before,
-.bonjorno-embedded-editor *::after {
+/* Remove only embed-related pseudo-elements, not markdown indicators */
+.bonjorno-embedded-editor > .markdown-embed::before,
+.bonjorno-embedded-editor > .markdown-embed::after,
+.bonjorno-embedded-editor > .internal-embed::before,
+.bonjorno-embedded-editor > .internal-embed::after {
   display: none !important;
   content: none !important;
   border: none !important;
